@@ -38,9 +38,9 @@ export function LogsTab() {
       ref={ref}
       className="scroll-quiet glass-2 flex max-h-[60vh] flex-col gap-0.5 overflow-y-auto rounded-xl border border-border/50 p-3"
     >
-      {logs.map((l) => (
+      {logs.map((l, i) => (
         <div
-          key={l.id}
+          key={l.id ? `${l.id}-${i}` : i}
           className="flex items-baseline gap-3 rounded-md px-2 py-1.5 font-mono text-[12px] leading-relaxed transition-colors duration-500 hover:bg-secondary/40"
         >
           <span className="shrink-0 text-faint">{formatTime(l.timestamp)}</span>

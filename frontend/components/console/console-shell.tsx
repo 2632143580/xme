@@ -28,14 +28,14 @@ export function ConsoleShell() {
   return (
     <ConsoleProvider>
       <AmbientGlow />
-      <div className="flex min-h-dvh flex-col">
+      <div className="flex h-dvh flex-col overflow-hidden">
         <TopBar />
 
-        <div className="flex min-h-0 flex-1 lg:overflow-hidden">
+        <div className="flex min-h-0 flex-1 overflow-hidden">
           <SideNav active={activeNav} onSelect={handleSelect} />
 
           {/* 主区：桌面双栏并列；移动端按导航切换单栏 */}
-          <main className="flex min-h-0 flex-1 gap-4 p-3 pb-24 md:p-4 lg:gap-5 lg:overflow-hidden lg:p-5 lg:pb-5">
+          <main className="flex min-h-0 flex-1 gap-4 overflow-hidden p-3 pb-24 md:p-4 lg:gap-5 lg:p-5 lg:pb-5">
             <div
               className={cn(
                 'min-h-0 w-full flex-col lg:flex lg:w-[clamp(340px,38%,460px)]',

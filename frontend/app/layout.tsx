@@ -37,7 +37,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} bg-background`}
     >
-      <body className="font-sans antialiased" suppressHydrationWarning>
+      <body className="font-sans antialiased h-full overflow-hidden" suppressHydrationWarning>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

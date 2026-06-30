@@ -65,7 +65,7 @@ export function ChatPanel() {
             />
           </div>
         ) : (
-          messages.map((m) => <MessageBubble key={m.id} message={m} />)
+          messages.map((m, i) => <MessageBubble key={m.id ? `${m.id}-${i}` : i} message={m} />)
         )}
         {sending && (
           <div className="flex justify-start">

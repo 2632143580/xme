@@ -4,6 +4,7 @@ import type {
   ChatMessage,
   ConfigData,
   ConfigField,
+  ConfigGroup,
   LogEntry,
   Reminder,
   SystemStatus,
@@ -95,7 +96,7 @@ function formatConfigData(raw: Record<string, RawConfigItem>): ConfigData {
     return '__ungrouped__'
   }
 
-  const groupLabels: Record<string, { group: string; title: string }> = {
+  const groupLabels: Record<string, { group: ConfigGroup['group']; title: string }> = {
     llm: { group: 'llm', title: '大语言模型' },
     schedule: { group: 'schedule', title: '主动调度' },
     storage: { group: 'storage', title: '存储与向量' },

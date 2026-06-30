@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+*.egg
+
+# IDE
+.workbuddy/
+
+# Environment
+.env
+
+# Data
+data/
+
+# Models
+models/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# pytest
+.pytest_cache/
+
+# Build
+dist/
+build/

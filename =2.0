@@ -1,0 +1,14 @@
+Collecting sqlalchemy
+  Downloading sqlalchemy-2.0.51-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+Collecting greenlet>=1 (from sqlalchemy)
+  Downloading greenlet-3.5.3-cp313-cp313-win_amd64.whl.metadata (3.9 kB)
+Requirement already satisfied: typing-extensions>=4.6.0 in e:\xme\demo\.venv\lib\site-packages (from sqlalchemy) (4.15.0)
+Downloading sqlalchemy-2.0.51-cp313-cp313-win_amd64.whl (2.1 MB)
+   ---------------------------------------- 2.1/2.1 MB 3.0 MB/s  0:00:01
+Downloading greenlet-3.5.3-cp313-cp313-win_amd64.whl (239 kB)
+Installing collected packages: greenlet, sqlalchemy
+
+Successfully installed greenlet-3.5.3 sqlalchemy-2.0.51
+
+[notice] A new release of pip is available: 25.3 -> 26.1.2
+[notice] To update, run: E:\xMe\demo\.venv\Scripts\python.exe -m pip install --upgrade pip
